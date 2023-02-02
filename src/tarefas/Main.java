@@ -32,24 +32,24 @@ public class Main{
                                     System.out.println("Qual o nome da tarefa?");
                                     tarefaCompleta.setNome(leitor.nextLine());
 
-//                                    System.out.println("Insira uma descrição da tarefa");
-//                                    tarefaCompleta.setDescricao(leitor.nextLine());
-//
-//                                    System.out.println("Qual a data de termino da tarefa?");
-//                                    tarefaCompleta.setDataTermino(leitor.nextLine());
-//
-//                                    System.out.println("Qual a categoria?");
-//                                    tarefaCompleta.setCategoria(leitor.nextLine());
-//
-//                                    System.out.println("De 1 à 5 qual a prioridade da tarefa em questão?");
-//                                    tarefaCompleta.setPrioridade(leitor.nextLine());
-//
-//                                    System.out.println("Qual o Status da tarefa? \n" +
-//                                            "1 . Todo \n" +
-//                                            "2 . Doing \n" +
-//                                            "3 . Done \n" +
-//                                            "Digite um número acima para definir o status da tarefa");
-//                                    tarefaCompleta.setStatus(leitor.nextLine());
+                                    System.out.println("Insira uma descrição da tarefa");
+                                    tarefaCompleta.setDescricao(leitor.nextLine());
+
+                                    System.out.println("Qual a data de termino da tarefa?");
+                                    tarefaCompleta.setDataTermino(leitor.nextLine());
+
+                                    System.out.println("Qual a categoria?");
+                                    tarefaCompleta.setCategoria(leitor.nextLine());
+
+                                    System.out.println("De 1 à 5 qual a prioridade da tarefa em questão?");
+                                    tarefaCompleta.setPrioridade(leitor.nextLine());
+
+                                    System.out.println("Qual o Status da tarefa? \n" +
+                                            "1 . Todo \n" +
+                                            "2 . Doing \n" +
+                                            "3 . Done \n" +
+                                            "Digite um número acima para definir o status da tarefa");
+                                    tarefaCompleta.setStatus(leitor.nextLine());
                                     adicionaTarefa.addItem(tarefaCompleta);
 
                                     System.out.println("Deseja adicionar uma nova tarefa?(Y/N)");
@@ -59,6 +59,7 @@ public class Main{
                                         switch (task){
                                             case "Y":
                                                 addTask = true;
+                                                verificaTask = false;
                                             break;
                                             case "N":
                                                 addTask = false;
