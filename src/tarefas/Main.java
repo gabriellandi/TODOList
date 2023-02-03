@@ -1,15 +1,12 @@
 package tarefas;
 
-import tarefas.Tarefa;
-
 import java.util.*;
 
-import static java.util.Collection.*;
 
 public class Main{
     public static void main(String[] args) {
         TodoList adicionaTarefa = new TodoList();
-        String verificador = "";
+        String verificador;
         boolean app = true;
 
         System.out.println("Bom vindo ao programa de gerenciamento de tarefas");
@@ -58,7 +55,6 @@ public class Main{
                                         String task = leitor.nextLine();
                                         switch (task){
                                             case "Y":
-                                                addTask = true;
                                                 verificaTask = false;
                                             break;
                                             case "N":
@@ -99,12 +95,6 @@ public class Main{
                                 System.out.println("Digite uma das opções acima");
                         }
                     break;
-//                    case "3":
-//
-//                    break;
-//                    case "4":
-//
-//                    break;
                     case "3":
                         adicionaTarefa.printList();
                         System.out.println("Digite o numero da tarefa para removê - la");
